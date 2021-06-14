@@ -1,5 +1,7 @@
 # EJS Web App 
 
+For education purpose..
+
 
 ## Copyright
 
