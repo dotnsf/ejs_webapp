@@ -11,5 +11,13 @@ router.get( '/hello', function( req, res ){
   res.end();
 });
 
+//. async `count` function
+var _count = 0;
+router.count = async function(){
+  return new Promise( async function( resolve, reject ){
+    resolve( ++ _count );
+  });
+}
+
 //. export router
 module.exports = router;
