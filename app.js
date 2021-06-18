@@ -18,7 +18,8 @@ app.use( '/api', myapi );
 
 //. TOP page
 var count = 0;
-app.get( '/', async function( req, res ){
+app.get( '/', function( req, res ){
+  count ++;
   //. Use top.ejs as template with parameter: { count: count } 
   res.render( 'top', { count: count } );
 });
